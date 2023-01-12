@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LanguageKind } from './core/enums';
+import { AppTranslateService } from './core/services/translate/app-translate.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  constructor(
+    appTranslateService: AppTranslateService
+  ) {
+    appTranslateService.setDefaultLang(LanguageKind.EN);
+    appTranslateService.use(LanguageKind.EN);
+  }
 }
