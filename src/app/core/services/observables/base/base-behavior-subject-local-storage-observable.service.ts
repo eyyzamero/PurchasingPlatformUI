@@ -1,11 +1,7 @@
-import { Injectable } from '@angular/core';
 import { IBaseObservableModel } from 'src/app/core/models';
 import { BaseObservableMapperService } from '../../mappers';
 import { BaseBehaviorSubjectObservableService } from './base-behavior-subject-observable.service';
 
-@Injectable({
-  providedIn: 'root'
-})
 export abstract class BaseBehaviorSubjectLocalStorageObservableService<T> extends BaseBehaviorSubjectObservableService<T> {
 
   constructor(

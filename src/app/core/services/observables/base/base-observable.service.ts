@@ -7,9 +7,6 @@ import { BaseObservableModel, IBaseObservableModel } from 'src/app/core/models';
 import { IBaseObservableService } from '..';
 import { BaseObservableMapperService } from '../../mappers';
 
-@Injectable({
-  providedIn: 'root'
-})
 export abstract class BaseObservableService<T> implements IBaseObservableService<T> {
 
   get observable(): Observable<IBaseObservableModel<T>> {
