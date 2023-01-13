@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import localeEn from '@angular/common/locales/en';
 import localePl from '@angular/common/locales/pl';
 import { LanguageKind } from './core/enums';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 
 registerLocaleData(localeEn, LanguageKind.EN);
 registerLocaleData(localePl, LanguageKind.PL);
@@ -34,6 +35,7 @@ registerLocaleData(localePl, LanguageKind.PL);
         ]
       }
     }),
+    AngularSvgIconModule.forRoot(),
     AppRoutingModule
   ],
   providers: [

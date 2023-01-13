@@ -1,13 +1,203 @@
-.layout-header-container {
-  background-color: black;
+* {
+  box-sizing: border-box;
+}
 
+.layout-header-container {
   header {
     display: flex;
+    justify-content: center;
 
-    .content {
-      max-width: 1600px;
-      padding: 16px 0;
-      color: white;
+    &.top,
+    &.bottom {
+      .content {
+        display: flex;
+        width: 100%;
+        max-width: 1600px;
+      }
+    }
+
+    &.top {
+      background-color: #f9f9f9;
+
+      .content {
+        padding: 8px 16px;
+        color: black;
+        justify-content: flex-end;
+
+        .user {
+          display: flex;
+          align-items: center;
+
+          .icon-container {
+            width: 24px;
+            height: 24px;
+
+            .icon {
+              width: 24px;
+              height: 24px;
+              fill: black;
+            }
+          }
+
+          span {
+            font-size: 16px;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+
+    &.bottom {
+      background-color: black;
+
+      .content {
+        padding: 16px 16px;
+        color: white;
+
+        @media(min-width: 1024px) {
+          justify-content: initial;
+        }
+
+        .logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          font-weight: bold;
+          color: #EF6B00;
+          cursor: pointer;
+
+          @media(min-width: 1024px) {
+            font-size: 27px;
+          }
+        }
+
+        .middle {
+          display: none;
+
+          @media(min-width: 1024px) {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+          }
+
+          .search {
+            display: flex;
+            width: 100%;
+            max-width: 450px;
+            height: 100%;
+
+            @media(min-width: 1600px) {
+              max-width: 600px;
+            }
+
+            input {
+              width: 100%;
+              padding: 11px;
+              height: 40px;
+              border: 0;
+              font-size: 16px;
+              font-weight: 500;
+              background-color: #f9f9f9;
+
+              @media(min-width: 1600px) {
+                padding: 16px;
+                height: 50px;
+              }
+            }
+
+            .submit {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #EF6B00;
+              border: none;
+              height: 40px;
+              width: 40px;
+
+              @media(min-width: 1600px) {
+                height: 50px;
+                width: 50px;
+              }
+
+              .icon-container {
+                width: 20px;
+                height: 20px;
+
+                .icon {
+                  width: 20px;
+                  height: 20px;
+                  fill: black;
+                }
+              }
+            }
+          }
+        }
+
+        .buttons {
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+
+          @media(min-width: 1024px) {
+            margin-left: 0; 
+          }
+
+          button {
+            &:not(&:first-of-type) {
+              margin-left: 30px;
+            }
+
+            &.clipboard,
+            &.cart {
+              display: flex;
+              background-color: transparent;
+              border: none;
+              font: 500 17px/27px Poppins, Arial;
+
+              &:hover {
+                cursor: pointer;
+
+                span {
+                  color: #EF6B00;
+                }
+              }
+
+              .icon-container {
+                width: 20px;
+                height: 20px;
+
+                @media(min-width: 1024px) {
+                  width: 30px;
+                  height: 30px;
+                }
+
+                .icon {
+                  width: 20px;
+                  height: 20px;
+                  fill: #EF6B00;
+
+                  @media(min-width: 1024px) {
+                    width: 30px;
+                    height: 30px;
+                  }
+                }
+              }
+
+              span {
+                display: none;
+                margin-left: 15px;
+                color: white;
+                font-weight: bold;
+
+                @media(min-width: 1600px) {
+                  display: initial;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
