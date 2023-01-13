@@ -1,0 +1,13 @@
+.layout-header-container {
+  background-color: black;
+
+  header {
+    display: flex;
+
+    .content {
+      max-width: 1600px;
+      padding: 16px 0;
+      color: white;
+    }
+  }
+}
