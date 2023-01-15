@@ -1,5 +1,5 @@
 import { registerLocaleData } from '@angular/common';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { TranslateLoader } from '@ngx-translate/core';
@@ -12,6 +12,7 @@ import localeEn from '@angular/common/locales/en';
 import localePl from '@angular/common/locales/pl';
 import { LanguageKind } from './core/enums';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { AuthenticationInterceptor } from './core/interceptors/authentication.interceptor';
 
 registerLocaleData(localeEn, LanguageKind.EN);
 registerLocaleData(localePl, LanguageKind.PL);
@@ -39,6 +40,11 @@ registerLocaleData(localePl, LanguageKind.PL);
     AppRoutingModule
   ],
   providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthenticationInterceptor,
+      multi: true
+    },
     {
       provide: LOCALE_ID,
       useValue: 'pl-PL'

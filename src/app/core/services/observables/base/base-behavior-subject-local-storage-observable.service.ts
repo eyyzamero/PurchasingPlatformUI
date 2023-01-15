@@ -21,7 +21,7 @@ export abstract class BaseBehaviorSubjectLocalStorageObservableService<T> extend
 		return this.observableSubject;
 	}
 
-  override add(value: T, next: boolean = false): void {
+  override add(value: T, next: boolean = true): void {
 		this._setLocalStorageItem(value);
     
     if (next)

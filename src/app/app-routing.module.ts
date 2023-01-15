@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthenticationGuard } from './core/guards';
 
 const routes: Routes = [
   {
@@ -8,7 +9,10 @@ const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule)
+    loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule),
+    canMatch: [
+      AuthenticationGuard
+    ]
   },
   {
     path: '**',
