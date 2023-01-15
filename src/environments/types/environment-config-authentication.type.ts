@@ -1,5 +1,4 @@
-type AuthenticationConfig = {
+export type EnvironmentConfigAuthentication = {
   serverURL: string;
-}
-
-export type EnvironmentConfigAuthentication = Partial<AuthenticationConfig>;
+  localStorageKey: string;
+};
