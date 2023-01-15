@@ -1,3 +1,5 @@
+@import "src/styles/layout/layout.scss";
+
 html {
   height: 100%;
 }
@@ -5,11 +7,15 @@ html {
 body {
   height: 100%;
   margin: 0;
-  font-family: Poppins,Arial;
+  font-family: Poppins, Arial;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 
-  *:focus {
-    outline: none !important;
+  * {
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none !important;
+    }
   }
 }
