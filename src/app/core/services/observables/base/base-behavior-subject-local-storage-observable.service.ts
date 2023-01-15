@@ -36,7 +36,7 @@ export abstract class BaseBehaviorSubjectLocalStorageObservableService<T> extend
   }
 
 	private _setLocalStorageItem(value: T): void {
-		this.add(value, false);
+		super.add(value, false);
 		localStorage.setItem(this._key, JSON.stringify(value));
 	}
 }
