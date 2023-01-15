@@ -1,6 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-
-import { AuthenticationMapperService } from './authentication-mapper.service';
+import { AuthenticationMapperService } from '..';
 
 describe('AuthenticationMapperService', () => {
   let service: AuthenticationMapperService;

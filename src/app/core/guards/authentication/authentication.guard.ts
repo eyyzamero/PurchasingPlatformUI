@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Location } from '@angular/common';
 import { AuthenticationObservableService } from '../../services/observables';
 import { IAuthenticationModel } from '../../models';
-import { JwtService } from '../../services/jwt/jwt.service';
+import { JwtService } from '../../services';
 
 @Injectable({
   providedIn: 'root'

@@ -5,7 +5,7 @@ import { IAuthenticationLoginReq } from 'src/app/core/contracts/requests';
 import { IAuthenticationLoginRes } from 'src/app/core/contracts/responses';
 import { CommunicationState } from 'src/app/core/enums';
 import { environment } from 'src/environments/environment';
-import { AuthenticationMapperService } from '../../mappers/authentication/authentication-mapper.service';
+import { AuthenticationMapperService } from '../../mappers';
 import { AuthenticationObservableService } from '../../observables';
 import { BaseCommunicationService } from '../base/base-communication.service';
 

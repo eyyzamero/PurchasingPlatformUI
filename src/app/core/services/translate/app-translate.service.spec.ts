@@ -1,6 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-
-import { AppTranslateService } from './app-translate.service';
+import { AppTranslateService } from '..';
 
 describe('AppTranslateService', () => {
   let service: AppTranslateService;

@@ -1,6 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-
-import { AuthenticationObservableService } from './authentication-observable.service';
+import { AuthenticationObservableService } from '..';
 
 describe('AuthenticationObservableService', () => {
   let service: AuthenticationObservableService;

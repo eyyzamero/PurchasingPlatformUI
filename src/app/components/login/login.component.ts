@@ -5,7 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { AuthenticationLoginReq } from 'src/app/core/contracts/requests';
 import { CommunicationState } from 'src/app/core/enums';
-import { AuthenticationCommunicationService } from 'src/app/core/services/communications/authentication/authentication-communication.service';
+import { AuthenticationCommunicationService } from 'src/app/core/services/communications';
 import { AuthenticationObservableService } from 'src/app/core/services/observables';
 
 @Component({
