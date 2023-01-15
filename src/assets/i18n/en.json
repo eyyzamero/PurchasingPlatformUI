@@ -1,4 +1,9 @@
 {
   "clipboard": "Clipboard",
-  "cart": "Cart"
+  "cart": "Cart",
+  "sign-in": "Sign in",
+  "login": {
+    "login-placeholder": "Login *",
+    "password-placeholder": "Password *"
+  }
 }

@@ -1,0 +1,11 @@
+<div class="login-container">
+  <div class="logo">
+    <span>PurchasingPlatformUI</span>
+  </div>
+  <form [formGroup]="form" (ngSubmit)="login()">
+    <b class="header" translate>sign-in</b>
+    <input type="text" formControlName="login" class="login" [placeholder]="'login.login-placeholder' | translate">
+    <input type="password" formControlName="password" class="password" [placeholder]="'login.password-placeholder' | translate">
+    <button type="submit" class="submit-btn" translate>sign-in</button>
+  </form>
+</div>

@@ -1,4 +1,9 @@
 {
   "clipboard": "Schowek",
-  "cart": "Koszyk"
+  "cart": "Koszyk",
+  "sign-in": "Zaloguj",
+  "login": {
+    "login-placeholder": "Login *",
+    "password-placeholder": "Hasło *"
+  }
 }
