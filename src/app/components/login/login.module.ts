@@ -6,6 +6,7 @@ import { LoginComponent } from './login.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { LoaderModule } from '../common/loader/loader.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { TranslateModule } from '@ngx-translate/core';
     FormsModule,
     ReactiveFormsModule,
     TranslateModule.forChild(),
+    LoaderModule,
     LoginRoutingModule
   ]
 })

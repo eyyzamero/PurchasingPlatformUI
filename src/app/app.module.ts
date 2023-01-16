@@ -12,7 +12,7 @@ import localeEn from '@angular/common/locales/en';
 import localePl from '@angular/common/locales/pl';
 import { LanguageKind } from './core/enums';
 import { AngularSvgIconModule } from 'angular-svg-icon';
-import { AuthenticationInterceptor } from './core/interceptors/authentication.interceptor';
+import { AuthenticationInterceptor } from './core/interceptors';
 
 registerLocaleData(localeEn, LanguageKind.EN);
 registerLocaleData(localePl, LanguageKind.PL);

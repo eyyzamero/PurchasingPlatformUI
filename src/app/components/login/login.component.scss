@@ -81,9 +81,16 @@
     }
 
     .submit-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: var(--app-orange-color);
-      color: white;
+      color: black;
       border: none;
+
+      &:hover {
+        color: white;
+      }
     }
   }
 }
