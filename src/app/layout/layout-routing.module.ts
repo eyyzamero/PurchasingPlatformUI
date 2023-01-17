@@ -5,7 +5,13 @@ import { LayoutComponent } from './layout.component';
 const routes: Routes = [
   {
     path: '',
-    component: LayoutComponent
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('../components/home/home.module').then(m => m.HomeModule)
+      }
+    ]
   }
 ];
 

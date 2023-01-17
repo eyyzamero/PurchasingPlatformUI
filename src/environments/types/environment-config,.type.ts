@@ -3,5 +3,6 @@ import { EnvironmentConfigAuthentication } from './environment-config-authentica
 export type EnvironmentConfig = {
   version: string;
   production: boolean;
+  apiUrl: string;
   authentication: EnvironmentConfigAuthentication;
 };

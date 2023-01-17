@@ -26,7 +26,7 @@ export class AuthenticationCommunicationService extends BaseCommunicationService
     this.cancelPendingRequests$.next();
     this._authenticationObservableService.addCommunicationState(CommunicationState.LOADING);
 
-    this._httpClient.post<IAuthenticationLoginRes>(`${environment.authentication.serverURL}/authentication/login`, req).pipe(
+    this._httpClient.post<IAuthenticationLoginRes>(`${environment.apiUrl}/authentication/login`, req).pipe(
       takeUntil(this.cancelPendingObservable),
       map(response => this._authenticationMapperService.iAuthenticationLoginResToIAuthenticationModel(response))
     ).subscribe({

@@ -1,0 +1,8 @@
+<div class="categories-container">
+  <div *ngFor="let category of categories" class="category">
+    <div class="icon-container">
+      <svg-icon [src]="'assets/icons/' + category.iconName + '.svg'" svgClass="icon"></svg-icon>
+    </div>
+    <div class="text" translate>categories.{{ category.name }}</div>
+  </div>
+</div>

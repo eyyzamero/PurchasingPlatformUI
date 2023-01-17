@@ -5,5 +5,14 @@
   "login": {
     "login-placeholder": "Login *",
     "password-placeholder": "Hasło *"
+  },
+  "categories": {
+    "smartphones": "Smartfony",
+    "tv/rtv": "TV / RTV",
+    "agd": "AGD",
+    "computers": "Komputery",
+    "photography": "Fotografia",
+    "gaming": "Gaming",
+    "toys": "Zabawki"
   }
 }
