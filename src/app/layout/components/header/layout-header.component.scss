@@ -16,9 +16,13 @@
       background-color: var(--layout-header-light-color);
 
       .content {
-        padding: 8px 16px;
+        padding: 8px 0;
         color: black;
         justify-content: flex-end;
+
+        @media(min-width: 1024px) {
+          padding: 8px;
+        }
 
         .user {
           display: flex;
@@ -61,10 +65,11 @@
       background-color: black;
 
       .content {
-        padding: 16px 16px;
+        padding: 16px 0;
         color: white;
 
         @media(min-width: 1024px) {
+          padding: 16px 8px;
           justify-content: initial;
         }
 
