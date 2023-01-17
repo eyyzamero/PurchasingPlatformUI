@@ -30,7 +30,7 @@ export class AuthenticationCommunicationService extends BaseCommunicationService
       takeUntil(this.cancelPendingObservable),
       map(response => this._authenticationMapperService.iAuthenticationLoginResToIAuthenticationModel(response))
     ).subscribe({
-      next: (value) => this._authenticationObservableService.add(value),
+      next: (authentication) => this._authenticationObservableService.add(authentication),
       error: (error) => this._authenticationObservableService.addError(error)
     });
   }
