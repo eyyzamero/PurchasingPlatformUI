@@ -2,6 +2,7 @@
   "clipboard": "Clipboard",
   "cart": "Cart",
   "sign-in": "Sign in",
+  "categories-in-our-store": "Categories in our store",
   "login": {
     "login-placeholder": "Login *",
     "password-placeholder": "Password *"

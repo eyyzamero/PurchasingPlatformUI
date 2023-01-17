@@ -2,6 +2,7 @@
   "clipboard": "Schowek",
   "cart": "Koszyk",
   "sign-in": "Zaloguj",
+  "categories-in-our-store": "Kategorie w naszym sklepie",
   "login": {
     "login-placeholder": "Login *",
     "password-placeholder": "Hasło *"
