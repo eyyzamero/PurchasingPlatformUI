@@ -3,6 +3,12 @@
   "cart": "Koszyk",
   "sign-in": "Zaloguj",
   "categories-in-our-store": "Kategorie w naszym sklepie",
+  "newsletter": {
+    "label": "Zapisz się na niskie ceny!",
+    "description": "Zostaw nam swój e-mail, aby otrzymywać informacje o nowościach oraz gazetkę promocyjną",
+    "email-placeholder": "Wpisz swój adres email",
+    "sign-me-up": "Zapisz mnie"
+  },
   "login": {
     "login-placeholder": "Login *",
     "password-placeholder": "Hasło *"

@@ -1,11 +1,12 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { AuthenticationObservableService } from 'src/app/core/services/observables';
 
 @Component({
   selector: 'app-layout-header',
   templateUrl: './layout-header.component.html',
-  styleUrls: ['./layout-header.component.scss']
+  styleUrls: ['./layout-header.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LayoutHeaderComponent implements OnInit, OnDestroy {
 
@@ -23,10 +24,7 @@ export class LayoutHeaderComponent implements OnInit, OnDestroy {
 
   private _initObservables(): void {
     const authenticationSubscription = this._authenticationObservableService.observable.subscribe({
-      next: (value) => {
-        console.log(value);
-        this.login = value.data.payload?.login ?? '';
-      } 
+      next: (value) => this.login = value.data.payload?.login ?? ''
     });
     this._subscriptions.push(authenticationSubscription);
   }

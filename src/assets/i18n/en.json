@@ -3,6 +3,12 @@
   "cart": "Cart",
   "sign-in": "Sign in",
   "categories-in-our-store": "Categories in our store",
+  "newsletter": {
+    "label": "Sign up for low prices!",
+    "description": "Leave us your email to receive news and promotional newsletter",
+    "email-placeholder": "Enter your email address",
+    "sign-me-up": "Sign me up"
+  },
   "login": {
     "login-placeholder": "Login *",
     "password-placeholder": "Password *"
